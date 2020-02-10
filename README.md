@@ -1,2 +1,2 @@
 # Foodfy
-Desafio do BootCamp Launchbase da Rockeseat 
+Desafio do BootCamp Launchbase da RocketSeat 
