@@ -1,0 +1,44 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <section class="receita">
+        <div class="card" id="{{item.id}}">
+            <div class="card-img receita-img">
+                <img src="{{item.img_url}}" alt="{{item.title}}">
+            </div>
+            <div class="receita-info">
+            <div class="titulo ">
+                <h1>{{item.title}}</h1>
+            </div>
+            <div class="autor">
+                <p>{{item.discription}}</p>
+            </div>
+            </div>
+        </div>
+    </section>  
+    <div class="igredientes">
+        <h1>Ingredientes</h1>
+        <div class="lista-igredientes">
+            <ul>
+                 {% for igrediente in item.ingredients %}
+                 <li>{{ igrediente }}</li>
+                 {% endfor %}
+            </ul>
+        </div>    
+    </div> 
+
+    <div class="preparo">
+        <h1>Modo de preparo</h1>
+        <ul>
+            {% for preparo in item.preparation %}
+                <li>{{ preparo }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+     <div class="infos-adicionais">
+        <h1>Informações adicionais</h1>
+        <p>{{ item.information }}</p>
+    </div>
+
+{% endblock %}

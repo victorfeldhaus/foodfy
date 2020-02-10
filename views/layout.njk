@@ -1,0 +1,124 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Foodfy</title>
+</head>
+<body>
+    <section class="body">
+    <header>
+        <div class="logo">
+            <a href="/index"> <img src="/assets/logo.png" alt="Foodfy"></a>
+        </div>
+        <div class="links">
+            <a href="/sobre">Sobre</a>
+            <a href="/receitas">Receitas</a>
+        </div>
+    </header>
+    
+    {% block content %}
+<div class="home">
+        <div class="home-info">
+            <h1>As melhores receitas</h1>
+            <p>Aprenda a construir os melhores pratos
+            com receitas criadas por profissionais do mundo
+            inteiro.</p>
+        </div>
+        <div class="home-imagem">
+            <img src="/assets/chef.png" alt="Chef">
+        </div>
+    </div>
+
+    <div class="tittle">
+        <h1>Mais acessadas</h1>
+    </div>
+    <section class="cards">
+
+        
+        <div class="card">
+            <div class="card-img">
+                <img src="/assets/burger.png" alt="Burger">
+            </div>
+            <div class="card-info">
+                <h1>Tripo bacon burger</h1>
+            </div>
+            <div class="card-text">
+                <p>por Jorge Relato</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="/assets/pizza.png" alt="Pizza">
+            </div>
+            <div class="card-info">
+                <h1>Pizza 4 estações</h1>
+            </div>
+            <div class="card-text">
+                <p>por Fabiana Melo</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="/assets/espaguete.png" alt="Espaguete">
+            </div>
+            <div class="card-info">
+                <h1>Espaguete ao alho</h1>
+            </div>
+            <div class="card-text">
+                <p>por Júlia Kinoto</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="/assets/lasanha.png" alt="Lasanha">
+            </div>
+            <div class="card-info">
+                <h1>Lasanha mac n' cheese</h1>
+            </div>
+            <div class="card-text">
+                <p>por Juliano Vieira</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="/assets/doce.png" alt="Doce">
+            </div>
+            <div class="card-info">
+                <h1>Docinhos pão-do-céu</h1>
+            </div>
+            <div class="card-text">
+                <p>por Ricardo Golvea</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="/assets/asinha.png" alt="Asinha">
+            </div>
+            <div class="card-info">
+                <h1>Asinhas de frango ao barbecue</h1>
+            </div>
+            <div class="card-text">
+                <p>por Vania Steroski</p>
+            </div>
+        </div>
+    </section>
+
+    {% endblock %}
+    
+    </section>
+    <footer>
+        <p>Todos os direitos reservados, receitas Foodfy</p>
+    </footer>
+</body>
+</html>
